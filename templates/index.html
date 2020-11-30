@@ -1,0 +1,48 @@
+<html>
+<head>
+ <title>Search Page</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+  <link rel="stylesheet" type = 'text/css' href= "{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="stylesheet" href="C:\Users\CNU23895TK\PycharmProjects\REDRT2\static\css\style.css">-->
+</head>
+<body>
+ <div class="content">
+    <h1>Let's Do Audit of CSFB Parameters of CITY Area</h1>
+
+
+ </div>
+ <form method = "post" enctype="multipart/form-data" class="bg">
+     <p>Select Any of the Object</p>
+	<select class="dropdown" name = "object"  id="object">
+		<option>--Select any object -- </option>
+		<option value="MORED">MORED</option>
+		<option value="MODRED">MODRED</option>
+		<option value="REDRT">REDRT</option>
+	</select>
+  <p>Please Upload file</p>
+    <input type = 'file' name = "file1" class="choosefile">
+
+    <input type = 'submit' name = "Submit" class="submitbtn">
+ </form>
+
+  <form method = "post" enctype="multipart/form-data" class="bg">
+  <p>Please click on below link to download reference file</p>
+
+<!--<ul type="None" class="dbtn">
+  	<li><a href= "{{url_for('download_REDRT')}}" class = "Downloadbtn"> REDRT</a></li>
+    <li><a href= "{{url_for('download_MODRED')}}" class = "Downloadbtn"> MODRED</a></li>
+    <li><a href= "{{url_for('download_MORED')}}" class = "Downloadbtn"> MORED</a></li>
+</ul>-->
+      <div class="" id="dd">
+  	<a href= "{{url_for('download_REDRT')}}" class = "Downloadbtn"> REDRT</a>
+    <a href= "{{url_for('download_MODRED')}}" class = "Downloadbtn"> MODRED</a>
+    <a href= "{{url_for('download_MORED')}}" class = "Downloadbtn"> MORED</a>
+</div>
+  </form>
+<br>
+<h3>Prepared By : Hardik Patel </h3>
+
+</body>
+</html>
