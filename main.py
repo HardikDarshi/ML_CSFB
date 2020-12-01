@@ -55,7 +55,7 @@ def index():
 
                 df = preprocessor.handle_missing_values(df)
                 df = preprocessor.remove_columns(df,columns)
-                filename1 = 'DTmodel_Pred_MOREDV6.sav'
+                filename1 = 'DTmodel_Pred_MOREDV7.sav'
                 loaded_model = pickle.load(open(filename1, 'rb'))
                 print('MOREDV5 model loaded')
                 prediction = loaded_model.predict(df)
