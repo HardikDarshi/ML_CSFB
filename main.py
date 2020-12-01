@@ -86,6 +86,7 @@ def index():
                 df = preprocessor.remove_columns(df,columns)
                 filename1 = 'DTmodel_Pred_REDRTV1.sav'
                 loaded_model = pickle.load(open(filename1, 'rb'))
+                print('REDRTV1 model is loaded')
                 prediction = loaded_model.predict(df)
                 result = pd.DataFrame(prediction)
                 result.columns = ['Pred']
