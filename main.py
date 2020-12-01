@@ -29,7 +29,7 @@ def index():
                 df = preprocessor.remove_columns(df,columns)
                 filename1 = 'DTmodel_Pred_MODREDV5.sav'
                 loaded_model = pickle.load(open(filename1, 'rb'))
-                print('MODREDV4 model loaded')
+                print('MODREDV5 model loaded')
                 prediction = loaded_model.predict(df)
                 result = pd.DataFrame(prediction)
                 result.columns = ['Pred']
@@ -57,7 +57,7 @@ def index():
                 df = preprocessor.remove_columns(df,columns)
                 filename1 = 'DTmodel_Pred_MOREDV7.sav'
                 loaded_model = pickle.load(open(filename1, 'rb'))
-                print('MOREDV5 model loaded')
+                print('MOREDV7 model loaded')
                 prediction = loaded_model.predict(df)
                 result = pd.DataFrame(prediction)
                 result.columns = ['Pred']
