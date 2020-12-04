@@ -100,7 +100,7 @@ def index():
                 return resp
             except Exception as e:
                 print('The Exception  message is:', e)
-                return 'Something is Wrong in MORED Part'
+                return 'Something is Wrong in REDRT Part'
 
 
     else:
